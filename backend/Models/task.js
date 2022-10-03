@@ -21,7 +21,7 @@ var Task = new Schema({
     priority: {
         type: String,
         enum: ["high", "low"],
-        required: true
+        default: "low"
     },
     status: {
         type: Boolean,

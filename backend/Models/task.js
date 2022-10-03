@@ -3,11 +3,11 @@ const Schema = mongoose.Schema;
 
 //schema
 var Task = new Schema({
-    Title: {
+    title: {
         type: String,
         required: true,
     },
-    Description: {
+    description: {
         type: String,
     },
     start: {
@@ -24,9 +24,8 @@ var Task = new Schema({
         required: true
     },
     status: {
-        type: String,
-        enum: ["pending", "finished"],
-        default: "pending",
+        type: Boolean,
+        default: false
     }
 });
 

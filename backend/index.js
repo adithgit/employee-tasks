@@ -3,9 +3,10 @@ require('./Database/connection');
 var cors = require('cors');
 var app = express();
 const routes = require('./Routes/route');
+const { urlencoded } = require('express');
 
 //server configuration
-var port = 6200;
+var port = 8080;
 
 // App Instance
 app.use(cors());

@@ -63,7 +63,7 @@ function App() {
         show={modalShow}
         onHide={() => setModalShow(false)}
       />
-      {tasks ? <Tasks tasks={tasks} /> : ""}
+      {tasks ? <Tasks setTasks={setTasks} tasks={tasks} /> : ""}
 
     </div>
   );

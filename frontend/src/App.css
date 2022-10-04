@@ -13,3 +13,13 @@
   right: 0;
   left: 0;
 }
+
+.filter{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.filter-child{
+  margin-inline: 1vh;
+}

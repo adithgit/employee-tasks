@@ -1,3 +1,4 @@
+require('dotenv').config();
 var express = require('express');
 require('./Database/connection');
 var cors = require('cors');
@@ -14,6 +15,6 @@ app.use(urlencoded({extended: true}));
 app.use('/', routes);
 
 // Execute App
-app.listen(port, () => {
+app.listen(process.env.PORT || port, () => {
   console.log('TodoList Backend running on Port: ',port);
 });

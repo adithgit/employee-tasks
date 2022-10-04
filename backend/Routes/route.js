@@ -3,6 +3,12 @@ const router = express.Router();
 const taskController = require('../Controller/task');
 const employeeController = require('../Controller/employee');
 
+
+router.get('/test', (req, res)=>{
+    console.log("connection");
+    res.status(200).send("test route");
+})
+
 // Get all the tasks of specific employee
 router.get('/tasks/:id', employeeController.getTasks)
 

@@ -9,7 +9,8 @@ var Employee = new Schema({
     },
     mobile: {
         type: Number,
-        unique: true
+        unique: true,
+        required: true
     },
     tasks: [{
         type: mongoose.Schema.Types.ObjectId,

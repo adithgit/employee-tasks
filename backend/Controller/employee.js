@@ -3,6 +3,7 @@ const employeeService = require('../Services/employee');
 
 exports.addEmployee = async (req, res)=>{
     try {
+        console.log(req.body);
         const result = await employeeService.addEmployee(req.body);
         res.status(200).send({payload: result});        
     } catch (error) {

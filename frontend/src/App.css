@@ -5,3 +5,11 @@
   padding-top: 2vh;
 }
 
+.toast{
+  position: fixed;
+  z-index: 5;
+  margin: auto;
+  top: 10vh;
+  right: 0;
+  left: 0;
+}

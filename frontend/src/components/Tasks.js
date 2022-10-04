@@ -56,9 +56,8 @@ function Tasks(props) {
     <>
       {
 
-        props.tasks.length < 1 ? "" :
+        props.tasks.length < 1 ? "Add or fetch tasks." :
           <>
-
             <h5>
               Sort By
             </h5>
